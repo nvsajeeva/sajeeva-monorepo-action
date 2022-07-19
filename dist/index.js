@@ -156,7 +156,6 @@ function run() {
             else {
                 core.debug('No modules found');
             }
-            modules = modules.pop()
             core.setOutput('modules', modules);
         }
         catch (error) {
