@@ -156,7 +156,7 @@ function run() {
             else {
                 core.debug('No modules found');
             }
-            core.setOutput(modules);
+            core.setOutput('modules', modules);
         }
         catch (error) {
             core.setFailed(error.message);
