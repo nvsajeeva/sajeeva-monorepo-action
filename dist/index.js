@@ -151,12 +151,12 @@ function run() {
                 modules = ignore_1.default().add(globs).filter(modules);
             }
             if (modules.length) {
-                modules = modules.pop();
                 core.debug(`Found modules:${modules.map((module) => `\n- ${module}`)}`);
             }
             else {
                 core.debug('No modules found');
             }
+            modules = modules.pop()
             core.setOutput('modules', modules);
         }
         catch (error) {
