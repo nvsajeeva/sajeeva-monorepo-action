@@ -148,7 +148,7 @@ function run() {
             }
             if (ignored) {
                 const globs = ignored.split('\n').map((item) => item.trim());
-                modules = ignore_1.default().add(modules).filter(globs);
+                modules = ignore_1.default().add(globs).filter(modules);
             }
             if (modules.length) {
                 core.debug(`Found modules:${modules.map((module) => `\n- ${module}`)}`);
